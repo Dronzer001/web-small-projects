@@ -1,65 +1,266 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-    <title>CatPhotoApp</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10091f">
+    <title>The Purple Universe | BTS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo">✦ PURPLE UNIVERSE</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <nav id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#members">Members</a>
+            <a href="#music">Discography</a>
+            <a href="#eras">Eras</a>
+            <a href="#army">ARMY Corner</a>
+        </nav>
+    </header>
+
     <main>
-      <h1>CatPhotoApp</h1>
-      <section>
-        <h2>Cat Photos</h2>
-        <!-- TODO: Add link to cat photos -->
-        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
-        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
-      </section>
-      <section>
-        <h2>Cat Lists</h2>
-        <h3>Things cats love:</h3>
-        <ul>
-          <li>cat nip</li>
-          <li>laser pointers</li>
-          <li>lasagna</li>
-        </ul>
-        <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
-          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
-        </figure>
-        <h3>Top 3 things cats hate:</h3>
-        <ol>
-          <li>flea treatment</li>
-          <li>thunder</li>
-          <li>other cats</li>
-        </ol>
-        <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
-          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
-        </figure>
-      </section>
-      <section>
-        <h2>Cat Form</h2>
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
-          <fieldset>
-            <legend>Is your cat an indoor or outdoor cat?</legend>
-            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
-            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
-          </fieldset>
-          <fieldset>
-            <legend>What's your cat's personality?</legend>
-            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
-            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
-            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
-          </fieldset>
-          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-          <button type="submit">Submit</button>
-        </form>
-      </section>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="stars" id="stars"></div>
+            <div class="hero-content">
+                <p class="eyebrow">A LITTLE UNIVERSE FOR ARMY</p>
+
+                <h1>THE PURPLE<br><span>UNIVERSE</span></h1>
+
+                <p class="hero-subtitle">
+                    Seven stars. One universe.<br>
+                    Endless memories.
+                </p>
+
+                <a href="#members" class="primary-btn">
+                    ENTER THE UNIVERSE ✦
+                </a>
+
+                <p class="hero-note">Made with love, for ARMY 💜</p>
+            </div>
+
+            <div class="scroll-indicator">
+                SCROLL TO EXPLORE ↓
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="intro section-padding">
+            <p class="eyebrow">MORE THAN MUSIC</p>
+            <h2>A universe of <em>seven</em></h2>
+
+            <p class="intro-text">
+                Seven different personalities, seven unique voices,
+                and one beautiful journey. This little corner celebrates
+                BTS, their music, their growth and the memories they
+                have shared with ARMY.
+            </p>
+
+            <div class="purple-line"></div>
+        </section>
+
+        <!-- Members -->
+        <section class="members section-padding" id="members">
+            <p class="eyebrow">THE SEVEN STARS</p>
+            <h2>Meet the <em>members</em></h2>
+
+            <p class="section-description">
+                Seven artists. Seven stories. One family.
+            </p>
+
+            <div class="member-grid">
+
+                <article class="member-card">
+                    <div class="member-art art-rm"><img src="images/members/rm.jpg" alt="RM"></div>
+                    <h3>RM</h3>
+                    <p>Kim Namjoon</p>
+                    <small>Leader · Rapper</small>
+                </article>
+
+                <article class="member-card">
+                    <div class="member-art art-jin"><img src="images/members/wwh.jpg" alt="Jin"></div>
+                    <h3>Jin</h3>
+                    <p>Kim Seokjin</p>
+                    <small>Vocalist</small>
+                </article>
+
+                <article class="member-card">
+                    <div class="member-art art-suga"><img src="images/members/suga.jpg" alt="SUGA"></div>
+                    <h3>SUGA</h3>
+                    <p>Min Yoongi</p>
+                    <small>Rapper · Producer</small>
+                </article>
+
+                <article class="member-card">
+                    <div class="member-art art-jhope"><img src="images/members/jhope.jpg" alt="j-hope"></div>
+                    <h3>j-hope</h3>
+                    <p>Jung Hoseok</p>
+                    <small>Rapper · Dancer</small>
+                </article>
+
+                <article class="member-card">
+                    <div class="member-art art-jimin"><img src="images/members/jimin.jpg" alt="Jimin"></div>
+                    <h3>Jimin</h3>
+                    <p>Park Jimin</p>
+                    <small>Vocalist · Dancer</small>
+                </article>
+
+                <article class="member-card">
+                    <div class="member-art art-v"><img src="images/members/v.jpg" alt="V"></div>
+                    <h3>V</h3>
+                    <p>Kim Taehyung</p>
+                    <small>Vocalist</small>
+                </article>
+
+                <article class="member-card">
+                    <div class="member-art art-jk"><img src="images/members/kookie.jpg" alt="Jung Kook"></div>
+                    <h3>Jung Kook</h3>
+                    <p>Jeon Jungkook</p>
+                    <small>Vocalist</small>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Discography -->
+        <section class="music section-padding" id="music">
+            <p class="eyebrow">SOUNDTRACK OF OUR MEMORIES</p>
+            <h2>The <em>discography</em></h2>
+
+            <p class="section-description">
+                Albums that became part of our universe.
+            </p>
+
+            <div class="album-grid">
+
+                <article class="album-card">
+                    <div class="album-art album-ly"><img src="images/discography/loveurself.jpg" alt="Love Yourself: Tear"></div>
+                    <h3>Love Yourself: Tear</h3>
+                    <p>2018 · Studio Album</p>
+                </article>
+
+                <article class="album-card">
+                    <div class="album-art album-mots"><img src="images/discography/mapofseoul.jpg" alt="MAP OF THE SOUL: 7"></div>
+                    <h3>MAP OF THE SOUL: 7</h3>
+                    <p>2020 · Studio Album</p>
+                </article>
+
+                <article class="album-card">
+                    <div class="album-art album-be"><img src="images/discography/be.jpg" alt="BE"></div>
+                    <h3>BE</h3>
+                    <p>2020 · Studio Album</p>
+                </article>
+
+                <article class="album-card">
+                    <div class="album-art album-proof"><img src="images/discography/proof.jpg" alt="Proof"></div>
+                    <h3>Proof</h3>
+                    <p>2022 · Anthology Album</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Eras -->
+        <section class="eras section-padding" id="eras">
+            <p class="eyebrow">A JOURNEY THROUGH TIME</p>
+            <h2>Every era tells a <em>story</em></h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span>2013</span>
+                    <div>
+                        <h3>The Beginning</h3>
+                        <p>Where the journey started. The debut era.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span>2016</span>
+                    <div>
+                        <h3>WINGS</h3>
+                        <p>A chapter of growth, temptation and discovery.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span>2018</span>
+                    <div>
+                        <h3>LOVE YOURSELF</h3>
+                        <p>A journey of loving and understanding yourself.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span>2020</span>
+                    <div>
+                        <h3>MAP OF THE SOUL & BE</h3>
+                        <p>Music, identity, comfort and connection.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span>2022</span>
+                    <div>
+                        <h3>PROOF</h3>
+                        <p>Celebrating the journey and the memories.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ARMY Corner -->
+        <section class="army section-padding" id="army">
+            <p class="eyebrow">A NOTE FOR ARMY</p>
+            <h2>Dear <em>ARMY</em> 💜</h2>
+
+            <p class="army-text">
+                No matter where life takes us, some songs will always
+                feel like home. Thank you for making this universe
+                a little brighter.
+            </p>
+
+            <div class="message-box">
+                <p id="randomMessage">
+                    You are doing amazing. Keep going, ARMY! 💜
+                </p>
+
+                <button id="messageBtn" class="secondary-btn">
+                    GIVE ME A LITTLE LOVE ✦
+                </button>
+            </div>
+
+            <button class="heart-btn" id="heartBtn" aria-label="Send love">
+                ♡
+            </button>
+            <p class="heart-label" id="heartLabel">Send some love to BTS</p>
+        </section>
+
     </main>
+
+    <!-- Footer -->
     <footer>
-      <p>
-        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
-      </p>
+        <h2>Made with 💜</h2>
+        <p>A fan-made creative project. Not affiliated with BTS or BIGHIT MUSIC.</p>
+        <p>© 2026 The Purple Universe</p>
+        <a href="#home">BACK TO THE STARS ↑</a>
     </footer>
-  </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
